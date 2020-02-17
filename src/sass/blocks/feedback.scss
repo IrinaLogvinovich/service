@@ -1,0 +1,141 @@
+.feedback {
+    margin-top: -238px;
+    padding: 0 20px;
+}
+
+.feedback .wrapper {
+    max-width: 1178px;
+    background: #E6F1FF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 94px;
+}
+
+.feedback__form {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    max-width: 974px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback__header {
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.feedback__text {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.feedback__image {
+    position: absolute;
+    top: -110px;
+    right: -130px;
+}
+
+.feedback__block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 312px;
+    margin-right: 20px;
+
+    &:first-child label {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    & label {
+        font-size: 14px;
+        line-height: 17px;
+        min-height: 30px;
+    }
+
+    & select, input {
+        width: 100%;
+
+        height: 52px;
+
+
+        background: #FFFFFF;
+        border: 0.5px solid #000000;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        padding: 0 20px;
+    }
+}
+
+.feedback__btn {
+    padding: 0;
+    height: 52px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 30px;
+}
+
+@media (max-width: 1450px) {
+    .feedback__image {
+        display: none;
+    }
+}
+
+@media(max-width: 1050px) {
+    .feedback__form {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .feedback__header {
+        margin-bottom: 10px;
+    }
+    .feedback__form {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        & label {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        & .feedback__block {
+
+        margin-right: 0;
+        }
+    }
+
+    .feedback__btn {
+        width: 100%;
+        max-width: 312px;
+    }
+
+    .feedback__header {
+        font-size: 30px;
+        line-height: 130%;
+    }
+
+    .feedback__text {
+        font-size: 20px;
+    }
+
+    .feedback .wrapper {
+        padding-bottom: 60px;
+    }
+}

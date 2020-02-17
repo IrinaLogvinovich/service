@@ -1,0 +1,19 @@
+root: true
+
+env:
+  browser: true
+
+extends:
+  "htmlacademy/es5"
+
+globals:
+  "$": true,
+  "moment": true,
+  "scrollLock": true,
+  "Swiper": true,
+  "Ya": true,
+  "IMask": true
+
+'rules': {
+    "no-new": 0
+  }
