@@ -1,0 +1,19 @@
+.marks .wrapper {
+    max-width: 1115px;
+}
+
+.marks__header {
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+    .marks__header {
+        font-size: 30px;
+        line-height: 130%;
+        margin-bottom: 30px;
+    }
+}

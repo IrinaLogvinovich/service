@@ -1,0 +1,26 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+// global
+@import "global/fonts.scss";
+@import "global/custom-normalize.scss";
+@import "global/scaffolding.scss";
+
+// стили сторонних плагинов
+// * - подключение всех файлов из папки
+@import "vendor/*";
+
+//файлы стилей
+@import "blocks/page-body";
+@import "blocks/wrapper";
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/about";
+@import "blocks/services";
+@import "blocks/advantages";
+@import "blocks/feedback";
+@import "blocks/work";
+@import "blocks/marks";
+@import "blocks/footer";
+@import "blocks/popup";
+

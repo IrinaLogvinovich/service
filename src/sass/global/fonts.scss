@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Manrope Regular"),
+    // local("Manrope-Regular"),
+    url("../font/Manrope-Regular.woff2") format("woff2"),
+    // url("../font/Manrope-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Manrope Bold"),
+    // local("Manrope-Bold"),
+    url("../font/Manrope-Bold.woff2") format("woff2"),
+    // url("../font/Manrope-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src:
+    local("Raleway ExtraBold"),
+    local("Raleway-ExtraBold"),
+    url("../font/Raleway-ExtraBold.woff2") format("woff2"),
+    url("../font/Raleway-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Raleway Bold"),
+    local("Raleway-Bold"),
+    url("../font/Raleway-Bold.woff2") format("woff2"),
+    url("../font/Raleway-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Raleway Regular"),
+    local("Raleway-Regular"),
+    url("../font/Raleway-Regular.woff2") format("woff2"),
+    url("../font/Raleway-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Ubuntu Bold"),
+    local("Ubuntu-Bold"),
+    url("../font/Ubuntu-Bold.woff2") format("woff2"),
+    url("../font/Ubuntu-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Ubuntu Medium"),
+    local("Ubuntu-Medium"),
+    url("../font/Ubuntu-Medium.woff2") format("woff2"),
+    url("../font/Ubuntu-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Ubuntu Regular"),
+    local("Ubuntu-Regular"),
+    url("../font/Ubuntu-Regular.woff2") format("woff2"),
+    url("../font/Ubuntu-Regular.woff") format("woff");
+}

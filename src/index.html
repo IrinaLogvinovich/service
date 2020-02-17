@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ремонт бытовой техники</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-body">
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="header__logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+      <nav class="header__menu">
+        <a class="header__link header__link--margin anchor" href="#about">О нас</a>
+        <a class="header__link header__link--margin anchor" href="#work">Как мы работаем</a>
+        <a class="header__link anchor" href="#contacts">Контакты</a>
+      </nav>
+      <ul class="header__contacts">
+        <li><a class="header__link" href="tel:+79000448720">8 9000 44 8720, </a><a class="header__link" href="tel:+783432133535">8 (343) 21-33-535</a></li>
+        <li><a class="header__btn btn btn--border js-popup" href="#">Заказать звонок</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="about">
+      <div class="wrapper">
+        <h2 class="about__header">Ремонт бытовой техники<span>в Екатеринбурге</span></h2>
+        <div class="about__wrapper">
+          <div class="about__text-block">
+            <ul class="about__list">
+              <li class="about__item">
+                <img src="img/progress.png" alt="отметка">
+                <p>Ремонт в день звонка</p>
+              </li>
+              <li class="about__item">
+                <img src="img/progress2.png" alt="отметка">
+                <p>Оригинальные запчасти</p>
+              </li>
+              <li class="about__item">
+                <img src="img/progress3.png" alt="отметка">
+                <p>Доступные цены</p>
+              </li>
+            </ul>
+            <a class="about__btn btn js-popup" href="btn">Оставить заявку</a>
+          </div>
+          <div class="about__image-block">
+            <img src="img/main-promo.png" alt="фотография техники">
+            <span></span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <section class="services">
+      <div class="wrapper">
+        <h2 class="services__header">Что мы ремонтируем</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <img src="img/holod.png" alt="иконка холодильника">
+            <a href="#">Холодильники</a>
+          </li>
+          <li class="services__item">
+            <img src="img/pech.png" alt="иконка посудомоечной машины">
+            <a href="#">Посудомоечные машины</a>
+          </li>
+          <li class="services__item">
+            <img src="img/wash.png" alt="иконка стиральной машины">
+            <a href="#">Стиральные <br> машины</a>
+          </li>
+          <li class="services__item">
+            <img src="img/sush.png" alt="иконка сушильной машины">
+            <a href="#">Сушильные <br> машины</a>
+          </li>
+          <li class="services__item">
+            <img src="img/vodo.png" alt="иконка водонагревателя">
+            <a href="#">Водонагреватели</a>
+          </li>
+          <li class="services__item">
+            <img src="img/var.png" alt="иконка варочной поверхности">
+            <a href="#">Варочные поверхности</a>
+          </li>
+          <li class="services__item">
+            <img src="img/duh.png" alt="иконка духового шкафа">
+            <a href="#">Духовые шкафы</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="advantages" id="about">
+      <div class="wrapper">
+        <h2 class="advantages__header">Наши преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3><span>7 </span>из 10 <br>заказчиков</h3>
+            <p>приходят к нам <br> по рекомендациям</p>
+          </li>
+          <li class="advantages__item">
+            <h3>Мы знаем <br>особенности</h3>
+            <p>моделей <br>каждого бренда</p>
+          </li>
+          <li class="advantages__item">
+            <h3>Вас обслуживают мастера</h3>
+            <p>с опытом работы <br>от 5 лет</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="wrapper">
+        <p class="feedback__text">Хотите ремонт прямо сейчас?</p>
+        <h2 class="feedback__header">Вызов мастера</h2>
+        <form class="feedback__form" action="#" method="post">
+          <div class="feedback__block">
+            <label for="item">Что у вас сломалось?</label>
+            <select name="item" id="item">
+              <option value="">Холодильник</option>
+              <option value="">Посудомоечна машина</option>
+              <option value="">Стиральная машина</option>
+              <option value="">Сушильная машина</option>
+              <option value="">Водонагреватель</option>
+              <option value="">Варочная поверхность</option>
+              <option value="">Духовой шкаф</option>
+            </select>
+          </div>
+          <div class="feedback__block">
+            <label for="phone">Оставьте номер телефона для связи</label>
+            <input type="text" name="phone" id="phone">
+          </div>
+          <button class="feedback__btn btn">Оставить завку</button>
+        </form>
+        <img class="feedback__image" src="img/feedback.png" alt="фото мастера">
+      </div>
+    </section>
+    <section class="work" id="work">
+      <div class="wrapper">
+        <h2 class="work__header">Как мы работаем</h2>
+        <ul class="work__list">
+          <li class="work__item">
+            <img src="img/textcontent.png" alt="">
+            <h3>Ремонт на дому</h3>
+            <p>Отремонтируем прямо у вас дома</p>
+          </li>
+          <li class="work__item">
+            <img src="img/textcontent2.png" alt="">
+            <h3>Доступные цены</h3>
+            <p>Ремонт не ударит по вашему кошельку</p>
+          </li>
+          <li class="work__item">
+            <img src="img/textcontent3.png" alt="">
+            <h3>Скидки</h3>
+            <p>Многодетный семьям пенсионерам<br> инвалидам</p>
+          </li>
+          <li class="work__item">
+            <img src="img/textcontent4.png" alt="">
+            <h3>Гарантия</h3>
+            <p>На ремонтные работы до 12 месяцев</p>
+          </li>
+
+          <li class="work__item">
+            <img src="img/textcontent5.png" alt="">
+            <h3>Выезд уже сегодня</h3>
+            <p>Ремонт производится в день звонка</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="marks">
+      <div class="wrapper">
+        <h2 class="marks__header">Обслуживаем технику всех марок</h2>
+        <img src="img/logo.jpg" alt="" width="100%" height="auto">
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contacts">
+    <div class="wrapper">
+      <a class="footer__logo" href="index.html"><img src="img/logo-light.svg" alt="логотип"></a>
+      <nav class="footer__menu">
+        <p class="footer__caption">Меню</p>
+        <a class="anchor" href="#about">О нас</a>
+        <a class="anchor" href="#work">Как мы работаем</a>
+      </nav>
+
+        <div class="footer__adress">
+          <p class="footer__caption">Контакты</p>
+          <p class="footer__item">г. Екатеринбург <br>ул. Сиреневый бульвар, 8</p>
+        </div>
+        <div class="footer__contacts-list">
+          <a href="tel:+79000448720">8 9000 44 8720, </a>
+          <a href="tel:+73432133535">8 (343) 21-33-535 </a><br>
+          <a href="mailto:remont-ekb-66@mail.ru">remont-ekb-66@mail.ru</a>
+        </div>
+
+    </div>
+  </footer>
+  <section class="popup" style="display: none">
+    <div class="popup__block">
+      <h2 class="popup__header">Мастер перезвонит вам</h2>
+      <span class="popup__description">в ближайшее время</span>
+      <form class="popup__form" action="#" method="post">
+        <p>Что у вас сломалось?</p>
+        <div class="popup__checkbox-wrapper">
+          <div class="popup__input-block">
+            <input class="visually-hidden" type="checkbox" name="device[]" value="varochnaya_poverhnost" id="varochnaya_poverhnost">
+            <label for="varochnaya_poverhnost">Варочная поверхность</label>
+          </div>
+          <div class="popup__input-block">
+            <input class="visually-hidden" type="checkbox" name="device[]" value="holodilnik" id="holodilnik">
+            <label for="holodilnik">Холодильник</label>
+            
+          </div>
+          <div class="popup__input-block">
+            <input class="visually-hidden" type="checkbox" name="device[]" value="posudomoechnaya_mashina" id="posudomoechnaya_mashina">
+            <label for="posudomoechnaya_mashina">Посудомоечная машина</label>
+            
+          </div>
+          <div class="popup__input-block">
+            <input class="visually-hidden" type="checkbox" name="device[]" value="vodonagrevatel" id="vodonagrevatel">
+            <label for="vodonagrevatel">Водонагреватель</label>
+            
+          </div>
+          <div class="popup__input-block">
+            <input class="visually-hidden" type="checkbox" name="device[]" value="stiralnaya_mashina" id="stiralnaya_mashina">
+            <label for="stiralnaya_mashina">Стиральная машина</label>
+            
+          </div>
+          <div class="popup__input-block">
+            <input class="visually-hidden" type="checkbox" name="device[]" value="duhovoy_shkaf" id="duhovoy_shkaf">
+            <label for="duhovoy_shkaf">Духовой шкаф</label>
+           
+          </div>
+          <div class="popup__input-block">
+            <input class="visually-hidden" type="checkbox" name="device[]" value="sushilnaya_mashina" id="sushilnaya_mashina">
+            <label for="sushilnaya_mashina">Сушильная машина</label>
+           
+          </div>
+        </div>
+        <div class="popup__fields-wrapper">
+          <label class="visually-hidden" for="user-name">Ваше имя</label>
+          <input type="text" name="user-name" placeholder="Ваше имя" required>
+          <label class="visually-hidden" for="user-phone" >Ваш телефон</label>
+          <input type="text" name="user-phone" placeholder="Ваш телефон" required>
+        </div>
+        <button class="popup__btn btn">Оставить заявку</button>
+      </form>
+      <button type="button" class="popup__close"><img src="img/close-icon.svg" alt=""></button>
+    </div>
+  </section>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

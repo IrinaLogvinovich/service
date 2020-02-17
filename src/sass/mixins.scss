@@ -1,0 +1,31 @@
+@mixin laptop {
+  @media (max-width: $desktop-width - 1) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: $laptop-width - 1) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $tablet-width - 1) {
+    @content;
+  }
+}
+
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+
+@mixin list($margin-bottom: 0) {
+  margin-top: 0;
+  margin-bottom: $margin-bottom;
+  padding-left: 0;
+  list-style: none;
+}
