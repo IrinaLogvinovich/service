@@ -6,8 +6,7 @@
     top: 0;
     left: 0;
     z-index: 10;
-
-
+    -webkit-transform-origin: 50%  51%;
 }
 
 .popup__block {
@@ -22,6 +21,14 @@
     transform: translate(-50%, -50%);
     padding: 40px 30px;
     overflow: hidden;
+
+    &--success {
+        min-height: 174px;
+
+        & .popup__header {
+            margin-bottom: 30px;
+        }
+    }
 
     &::after {
         position: absolute;

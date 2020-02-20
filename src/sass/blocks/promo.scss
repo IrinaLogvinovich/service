@@ -1,0 +1,248 @@
+.promo {
+    background: url('../img/background.png') no-repeat 0 0;
+    padding-bottom: 20px;
+    margin-top: -197px;
+    padding-top: 207px;
+    // background-size: cover;
+}
+
+.promo .wrapper {
+    max-width: 1346px;
+    display: flex;
+    // flex-wrap: wrap;
+    padding: 0 20px;
+    flex-direction: column;
+}
+
+.promo__wrapper {
+    display: flex;
+}
+
+.promo__header {
+    margin-top: 53px;
+    width: 100%;
+    font-size: 70px;
+    line-height: 65px;
+    position: relative;
+    z-index: 5;
+
+    & span {
+        margin-top: 30px;
+        display: block;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
+.promo__list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 13px;
+}
+
+.promo__item {
+    width: 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 60px;
+
+    & p {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+
+.promo__text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.promo__image-block {
+    margin-top: -278px;
+    flex-grow: 1;
+    text-align: right;
+    position: relative;
+
+    & img {
+        position: relative;
+        z-index: 2;
+    }
+
+    & span {
+        position: absolute;
+        width: 623px;
+        height: 623px;
+        border-radius: 50%;
+        background: #FFEF5D;
+        right: -35px;
+        top: 90px;
+    }
+
+    &--sush {
+        padding-right: 10%;
+        // margin-top: -298px;
+        margin-bottom: 30px;
+
+        & img {
+            margin-left: auto;
+        }
+    }
+
+    &--pos {
+        // margin-top: -400px;
+        // transform: translateX(120px);
+        z-index: 2;
+    }
+
+    &--var {
+        & img {
+            margin-left: auto;
+            transform: translateX(50px)
+        }
+    }
+
+    &--vod {
+        margin-bottom: 70px;
+        & img {
+            margin-left: auto;
+        }
+    }
+}
+
+.promo__btn {
+    margin-top: 0px;
+    z-index: 5;
+}
+
+.promo__header--small {
+    font-size: 64px;
+    line-height: 65px;
+}
+
+@media (max-width: 1850px){
+    .promo__header--width {
+        max-width: 400px;
+    }
+
+    .promo__image-block--var {
+        & img {
+            transform: translateX(0)
+        }
+    }
+}
+@media(max-width: 1180px) {
+    .promo__image-block {
+        // margin-top: -200px;
+        & img {
+            width: 100%;
+            height: auto;
+        }
+
+        &--holod {
+            & img {
+                max-width: 677px;
+            }
+        }
+
+        &--stir {
+            & img {
+                max-width: 708px;
+            }
+        }
+
+        &--sush {
+            padding-right: 0;
+            margin-bottom: 50px;
+            & img {
+                margin-left: 0;
+                max-width: 477px;
+            }
+        }
+
+        &--pos {
+            & img {
+                max-width: 656px;
+            }
+        }
+
+        &--var {
+            & img {
+                max-width: 740px;
+            }
+        }
+
+        &--vod {
+            margin-bottom: 70px;
+            & img {
+                margin-left: 0;
+                max-width: 605px;
+            }
+        }
+
+        &--pech {
+            margin-bottom: 30px;
+            & img {
+                max-width: 649px;
+            }
+        }
+    }
+}
+@media(max-width: 980px) {
+
+    .promo__header {
+        margin-top: 10px;
+        text-align: center;
+
+        & br {
+            display: none;
+        }
+
+        &--width {
+            max-width: 100%;
+        }
+    }
+    .promo__wrapper{
+        flex-direction: column;
+    }
+
+    .promo__text-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .promo__image-block {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        order: -1;
+
+        &--holod {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .promo__header {
+        font-size: 50px;
+        line-height: 120%;
+    }
+}
+
+@media(max-width: 500px) {
+    .promo__header {
+        font-size: 36px;
+        line-height: 120%;
+
+    }
+
+    .promo__btn {
+        margin-top: 20px;
+        width: 280px;
+    }
+}

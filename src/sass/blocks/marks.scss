@@ -1,5 +1,10 @@
 .marks .wrapper {
     max-width: 1115px;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .marks__header {

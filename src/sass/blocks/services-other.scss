@@ -1,0 +1,122 @@
+.services-other {
+   padding-top: 30px;
+   position: relative;
+
+   &::before {
+       content: "";
+       position: absolute;
+       width: 100%;
+       max-width: 680px;
+       height: 1px;
+       background: $black;
+       top: -10px;
+       left: 50%;
+       transform: translateX(-50%);
+   }
+}
+
+.services-other .wrapper {
+    position: relative;
+    max-width: 1348px;
+}
+
+.services-other__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.services-other__item {
+    height: 142px;
+    width: 14.28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+
+    & a {
+        margin-top: 8px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+        color: inherit;
+        text-decoration: none;
+
+        & img:last-child{
+            display: none;
+            // margin-top: -22px;
+        }
+
+        &:first-child {
+            width: 100%;
+            height: 100px;
+            position: relative;
+
+            & img {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &:hover {
+                & img:first-child {
+                    display: none;
+                }
+
+                & img:last-child {
+                    display: inline;
+                    top: -7px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 980px) {
+    .services-other__item {
+        margin-right: 0;
+        width: 25%;
+    }
+}
+
+@media(max-width: 630px) {
+    .services-other__item {
+        width: 33%;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .services-other__list {
+        // flex-direction: column;
+        // align-items: center
+    }
+    .services-other__item {
+        width: 33%;
+        max-width: 300px;
+        // flex-direction: row;
+        height: 90px;
+        margin-bottom: 40px;
+
+        & br {
+            display: none;
+        }
+
+        & img:first-child {
+            height: 50px;
+        }
+        & img:last-child {
+            height: 60px;
+            top: 3px;
+        }
+
+        & a {
+            font-size: 12px;
+            line-height: 13px;
+        }
+    }
+}

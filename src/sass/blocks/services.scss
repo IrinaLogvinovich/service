@@ -55,6 +55,35 @@
         line-height: 17px;
         color: inherit;
         text-decoration: none;
+
+        & img:last-child{
+            display: none;
+            // margin-top: -22px;
+        }
+
+        &:first-child {
+            width: 100%;
+            height: 100px;
+            position: relative;
+
+            & img {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &:hover {
+                & img:first-child {
+                    display: none;
+                }
+
+                & img:last-child {
+                    display: inline;
+                    top: -7px;
+                }
+            }
+        }
     }
 }
 

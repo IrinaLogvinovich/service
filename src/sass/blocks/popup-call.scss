@@ -1,0 +1,114 @@
+.popup-call {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+
+}
+
+.popup-call__block {
+    box-sizing: border-box;
+    background: white;
+    width: 100%;
+    max-width: 488px;
+    min-height: 215px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 40px;
+    overflow: hidden;
+}
+
+.popup-call__header {
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+.popup-call__form {
+    display: flex;
+    justify-content: space-between;
+    // flex-direction: column;
+    & p {
+        margin-top: 25px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+
+.popup-call__fields-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+
+    & label {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 10px;
+    }
+    & input {
+        font-size: 12px;
+        line-height: 14px;
+        font-family: inherit;
+        color: #787878;
+        width: 100%;
+        max-width: 250px;
+        box-sizing: border-box;
+        padding: 0 25px;
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 44px;
+    }
+}
+.popup-call_gradient-wrapper {
+    position: relative;
+    margin-top: 27px;
+    width: 141px;
+    height: 44px;
+    background: linear-gradient(180deg, #003D85 0%, #0075FF 100%);
+    border-radius: 10px;
+
+}
+.popup-call__btn {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 135px;
+    height: 38px;
+    padding: 0;
+    color: black;
+    font-size: 14px;
+    line-height: 17px; 
+    background: white;
+    box-shadow: none;
+    border: none;
+    border-radius: 7px;
+    z-index: 4;
+    &:hover::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-call__form {
+        flex-direction: column;
+        align-items: center;
+
+        & label {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+}

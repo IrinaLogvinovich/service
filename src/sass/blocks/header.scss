@@ -22,8 +22,27 @@
     font-size: 18px;
     line-height: 22px;
     color: $black;
+    position: relative;
+
+    
 }
 
+.header__link.anchor {
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background: $yellow;
+        left: 0;
+        bottom: -5px;
+    }
+
+    &:hover::after {
+        transition: 0.8s;
+        width: 100%;
+    }
+}
 .header__link--margin {
     margin-right: 35px;
 }

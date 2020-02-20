@@ -1,0 +1,223 @@
+.problems {
+    margin-top: -100px;
+    padding-bottom: 150px;
+    background: $yellow;
+    background-size: cover;
+    margin-bottom: 200px;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: -150px;
+        left: 0;
+        height: 150px;
+        width: 100%;
+        background: url('../img/problems.png') no-repeat 0 100%;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: -235px;
+        left: 0;
+        height: 235px;
+        width: 100%;
+        background: url('../img/problems.png') no-repeat 0 0;
+    }
+}
+
+.problems .wrapper {
+    max-width: 1348px;
+}
+
+.problems__header {
+    margin-top: 64px;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+}
+
+.problems__list {
+    font-family: 'Roboto';
+    list-style: none;
+    display: flex;
+    padding: 0;
+    padding-top: 6px;
+    flex-wrap: wrap;
+}
+
+.problems__item {
+    width: 25%;
+    padding-right: 30px;
+    box-sizing: border-box;
+
+    & h3 {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+
+    & ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+
+        & li:first-child{
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        & li:nth-child(3){
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        & li:nth-child(5){
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        & li {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    & span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.problems__item--two {
+    width: 50%;
+}
+
+.problems__item--long {
+
+    & ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & li {
+            width: 48%;
+            background: none;
+
+            &:nth-child(2){
+                background: rgba(255, 255, 255, 0.3);
+            }
+            &:nth-child(3){
+                background: none;
+            }
+            &:last-child{
+                background: rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+
+}
+
+.problems__item--three {
+    width: 33%;
+}
+
+.problems__item--long {
+    width: 66%;
+}
+
+@media (max-width: 1070px) {
+    .problems {
+        margin-top: 0;
+    }
+
+
+    .problems__item {
+        width: 50%;
+    }
+
+    .problems__item--long ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        & li {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 980px){
+    .problems__item--two {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .problems__item--long {
+
+        & ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            & li {
+                width: 100%;
+                background: none;
+    
+                &:nth-child(2){
+                    background:  none;
+                }
+                &:nth-child(3){
+                    background: rgba(255, 255, 255, 0.3);
+                }
+                &:last-child{
+                    background: none;
+                }
+            }
+        }
+    
+    }
+}
+
+@media (max-width: 768px) {
+    .problems__header {
+        font-size: 30px;
+        line-height: 130%;
+        margin-bottom: 30px;
+    }
+
+    .problems__item {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+// @media (max-width: 700px) {
+//     .problems__list {
+//         flex-direction: column;
+//         text-align: center;
+
+//         & br {
+//             display: none;
+//         }
+//     }
+
+//     .problems__item {
+//         margin-bottom: 30px;
+//         &:first-child {
+//             & h3{
+//                 padding-left: 0;
+
+//                 & span {
+//                     display: inline;
+//                 }
+                
+//                 &::before {
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+
+// }

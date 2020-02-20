@@ -20,7 +20,7 @@
       </nav>
       <ul class="header__contacts">
         <li><a class="header__link" href="tel:+79000448720">8 9000 44 8720, </a><a class="header__link" href="tel:+783432133535">8 (343) 21-33-535</a></li>
-        <li><a class="header__btn btn btn--border js-popup" href="#">Заказать звонок</a></li>
+        <li><a class="header__btn btn btn--border js-popup-call" href="#">Заказать звонок</a></li>
       </ul>
     </div>
   </header>
@@ -32,60 +32,79 @@
           <div class="about__text-block">
             <ul class="about__list">
               <li class="about__item">
-                <img src="img/progress.png" alt="отметка">
+                <img src="img/progress.png" alt="отметка" class="lazyload">
                 <p>Ремонт в день звонка</p>
               </li>
               <li class="about__item">
-                <img src="img/progress2.png" alt="отметка">
+                <img src="img/progress2.png" alt="отметка" class="lazyload">
                 <p>Оригинальные запчасти</p>
               </li>
               <li class="about__item">
-                <img src="img/progress3.png" alt="отметка">
+                <img src="img/progress3.png" alt="отметка" class="lazyload">
                 <p>Доступные цены</p>
               </li>
             </ul>
-            <a class="about__btn btn js-popup" href="btn">Оставить заявку</a>
+            <a class="about__btn btn js-popup" href="btn"><span>Оставить заявку</span></a>
           </div>
           <div class="about__image-block">
-            <img src="img/main-promo.png" alt="фотография техники">
+            <img src="img/main-promo.png" alt="фотография техники" class="lazyload">
             <span></span>
           </div>
         </div>
-
       </div>
-
     </section>
     <section class="services">
       <div class="wrapper">
         <h2 class="services__header">Что мы ремонтируем</h2>
         <ul class="services__list">
           <li class="services__item">
-            <img src="img/holod.png" alt="иконка холодильника">
-            <a href="#">Холодильники</a>
+            <a href="holodilnik.html">
+              <img src="img/holod.png" alt="иконка холодильника" class="lazyload">
+              <img src="img/holod-hover.png" alt="иконка холодильника" class="lazyload">
+            </a>
+            <a href="holodilnik.html">Холодильники</a>
           </li>
           <li class="services__item">
-            <img src="img/pech.png" alt="иконка посудомоечной машины">
-            <a href="#">Посудомоечные машины</a>
+            <a href="posudomoechnaya_mashina.html">
+              <img src="img/pech.png" alt="иконка посудомоечной машины" class="lazyload">
+              <img src="img/pos-hover.png" alt="иконка посудомоечной машины" class="lazyload">
+            </a>
+            <a href="posudomoechnaya_mashina.html">Посудомоечные машины</a>
           </li>
           <li class="services__item">
-            <img src="img/wash.png" alt="иконка стиральной машины">
-            <a href="#">Стиральные <br> машины</a>
+            <a href="stiralnaya_mashina.html">
+              <img src="img/wash.png" alt="иконка стиральной машины" class="lazyload">
+              <img src="img/stir-hover.png" alt="иконка стиральной машины" class="lazyload">
+            </a>
+            <a href="stiralnaya_mashina.html">Стиральные <br> машины</a>
           </li>
           <li class="services__item">
-            <img src="img/sush.png" alt="иконка сушильной машины">
-            <a href="#">Сушильные <br> машины</a>
+            <a href="sushilnaya_mashina.html">
+              <img src="img/sush.png" alt="иконка сушильной машины" class="lazyload">
+              <img src="img/sush-hover.png" alt="иконка сушильной машины" class="lazyload">
+            </a>
+            <a href="sushilnaya_mashina.html">Сушильные <br> машины</a>
           </li>
           <li class="services__item">
-            <img src="img/vodo.png" alt="иконка водонагревателя">
-            <a href="#">Водонагреватели</a>
+            <a href="vodonagrevatel.html">
+              <img src="img/vodo.png" alt="иконка водонагревателя" class="lazyload">
+              <img src="img/vod-hover.png" alt="иконка водонагревателя" class="lazyload">
+            </a>
+            <a href="vodonagrevatel.html">Водонагреватели</a>
           </li>
           <li class="services__item">
-            <img src="img/var.png" alt="иконка варочной поверхности">
-            <a href="#">Варочные поверхности</a>
+            <a href="varochnaya_poverhnost.html">
+              <img src="img/var.png" alt="иконка варочной поверхности" class="lazyload">
+              <img src="img/var-hover.png" alt="иконка варочной поверхности" class="lazyload">
+            </a>
+            <a href="varochnaya_poverhnost.html">Варочные поверхности</a>
           </li>
           <li class="services__item">
-            <img src="img/duh.png" alt="иконка духового шкафа">
-            <a href="#">Духовые шкафы</a>
+            <a href="duhovoy_shkaf.html">
+              <img src="img/duh.png" alt="иконка духового шкафа" class="lazyload">
+              <img src="img/duh-hover.png" alt="иконка духового шкафа" class="lazyload">
+            </a>
+            <a href="duhovoy_shkaf.html">Духовые шкафы</a>
           </li>
         </ul>
       </div>
@@ -117,22 +136,22 @@
           <div class="feedback__block">
             <label for="item">Что у вас сломалось?</label>
             <select name="item" id="item">
-              <option value="">Холодильник</option>
-              <option value="">Посудомоечна машина</option>
-              <option value="">Стиральная машина</option>
-              <option value="">Сушильная машина</option>
-              <option value="">Водонагреватель</option>
-              <option value="">Варочная поверхность</option>
-              <option value="">Духовой шкаф</option>
+              <option value="holodilnik">Холодильник</option>
+              <option value="posudomoechnaya_mashina">Посудомоечна машина</option>
+              <option value="stiralnaya_mashina">Стиральная машина</option>
+              <option value="sushilnaya_mashina">Сушильная машина</option>
+              <option value="vodonagrevatel">Водонагреватель</option>
+              <option value="varochnaya_poverhnost">Варочная поверхность</option>
+              <option value="duhovoy_shkaf">Духовой шкаф</option>
             </select>
           </div>
           <div class="feedback__block">
             <label for="phone">Оставьте номер телефона для связи</label>
             <input type="text" name="phone" id="phone">
           </div>
-          <button class="feedback__btn btn">Оставить завку</button>
+          <button class="feedback__btn btn"><span>Оставить завку</span></button>
         </form>
-        <img class="feedback__image" src="img/feedback.png" alt="фото мастера">
+        <img class="feedback__image lazyload" src="img/feedback.png" alt="фото мастера" >
       </div>
     </section>
     <section class="work" id="work">
@@ -140,28 +159,28 @@
         <h2 class="work__header">Как мы работаем</h2>
         <ul class="work__list">
           <li class="work__item">
-            <img src="img/textcontent.png" alt="">
+            <img src="img/textcontent.png" alt="иконка" class="lazyload">
             <h3>Ремонт на дому</h3>
             <p>Отремонтируем прямо у вас дома</p>
           </li>
           <li class="work__item">
-            <img src="img/textcontent2.png" alt="">
+            <img src="img/textcontent2.png" alt="иконка" class="lazyload">
             <h3>Доступные цены</h3>
             <p>Ремонт не ударит по вашему кошельку</p>
           </li>
           <li class="work__item">
-            <img src="img/textcontent3.png" alt="">
+            <img src="img/textcontent3.png" alt="иконка" class="lazyload">
             <h3>Скидки</h3>
             <p>Многодетный семьям пенсионерам<br> инвалидам</p>
           </li>
           <li class="work__item">
-            <img src="img/textcontent4.png" alt="">
+            <img src="img/textcontent4.png" alt="иконка" class="lazyload">
             <h3>Гарантия</h3>
             <p>На ремонтные работы до 12 месяцев</p>
           </li>
 
           <li class="work__item">
-            <img src="img/textcontent5.png" alt="">
+            <img src="img/textcontent5.png" alt="иконка" class="lazyload">
             <h3>Выезд уже сегодня</h3>
             <p>Ремонт производится в день звонка</p>
           </li>
@@ -171,7 +190,7 @@
     <section class="marks">
       <div class="wrapper">
         <h2 class="marks__header">Обслуживаем технику всех марок</h2>
-        <img src="img/logo.jpg" alt="" width="100%" height="auto">
+        <img src="img/logo.jpg" alt="логотипы" class="lazyload">
       </div>
     </section>
   </main>
@@ -197,7 +216,7 @@
     </div>
   </footer>
   <section class="popup" style="display: none">
-    <div class="popup__block">
+    <div class="popup__block popup__block--main" style="display: none">
       <h2 class="popup__header">Мастер перезвонит вам</h2>
       <span class="popup__description">в ближайшее время</span>
       <form class="popup__form" action="#" method="post">
@@ -240,13 +259,29 @@
         </div>
         <div class="popup__fields-wrapper">
           <label class="visually-hidden" for="user-name">Ваше имя</label>
-          <input type="text" name="user-name" placeholder="Ваше имя" required>
+          <input type="text" id="user-name" name="user-name" placeholder="Ваше имя" required>
           <label class="visually-hidden" for="user-phone" >Ваш телефон</label>
-          <input type="text" name="user-phone" placeholder="Ваш телефон" required>
+          <input type="text" id="user-phone" name="user-phone" placeholder="Ваш телефон" required>
         </div>
-        <button class="popup__btn btn">Оставить заявку</button>
+        <button class="popup__btn btn"><span>Оставить заявку</span></button>
       </form>
       <button type="button" class="popup__close"><img src="img/close-icon.svg" alt=""></button>
+    </div>
+    <div class="popup__block popup__block--success" style="display: none">
+      <h2 class="popup__header">Спасибо, <br> ваша заявка принята!</h2>
+      <span class="popup__description"> в ближайшее время мастер свяжется с вами.</span>
+      <button type="button" class="popup__close"><img src="img/close-icon.svg" alt=""></button>
+    </div>
+    <div class="popup-call__block"  style="display: none">
+      <h2 class="popup-call__header">Мы перезвоним вам в ближайшее время</h2>
+      <form class="popup-call__form" action="#" method="POST">
+        <div class="popup-call__fields-wrapper">
+          <label for="feedback-phone">Ваш номер телефона</label>
+          <input type="text" id="feedback-phone" name="feedback-phone" placeholder="+7 (___) ___-__-__" required>
+        </div>
+        <div class="popup-call_gradient-wrapper"><button class="popup-call__btn">Заказать звонок</button></div>
+      </form>
+      <!-- <button type="button" class="popup-call__close"><img src="img/close-icon.svg" alt=""></button> -->
     </div>
   </section>
   <script src="js/vendor.js"></script>
